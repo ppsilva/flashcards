@@ -30,12 +30,14 @@ Component {
         }
         TextField {
             id: frontTextField
+            color : UbuntuColors.graphite /*or UbuntuColors.ash*/
             placeholderText: i18n.tr("Front")
             focus: true
             Keys.onReturnPressed: backTextField.focus = true
         }
         TextField {
             id: backTextField
+            color : UbuntuColors.graphite /*or UbuntuColors.ash*/
             placeholderText: i18n.tr("Back")
             Keys.onReturnPressed: confirmButton.clicked()
         }
